@@ -12,7 +12,7 @@ export function FreeShipping() {
         <img src={freeShippingIcon} alt="freeShippingIcon" />
         &nbsp; Free shipping for ordering up to &nbsp;$230
       </FreeShippingNav>
-      <FreeShippingNav style={{ gap: "24px" }}>
+      <FreeShippingNav>
         <A>About</A>
         <A>Newsletter</A>
         <A>FAQS</A>
@@ -29,12 +29,18 @@ const Contain = styled.div`
   font-size: 12px;
   text-transform: uppercase;
   align-content: center;
-  padding: 18px 0;
-  @media (min-width: 1600px) {
-    padding: 18px 100px;
+  padding: 18px 100px;
+  @media (max-width: 1024px) {
+    padding: 18px 10px;
+    font-size: 8px;
   }
 `;
 
 const FreeShippingNav = styled.div`
   display: flex;
+  word-break: break-all;
+  gap: 24px;
+  @media (max-width: 1024px) {
+    gap: 16px;
+  }
 `;

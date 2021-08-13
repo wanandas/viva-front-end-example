@@ -12,7 +12,7 @@ import lineBorderIcon from "../Icon/LineBorder.svg";
 export function NavSiamSmile() {
   return (
     <Navbar>
-      <ContainA>
+      <ContainMenu>
         <A>
           <Icon src={hambergerIcon} alt="hambergerIcon" />
         </A>
@@ -30,26 +30,23 @@ export function NavSiamSmile() {
         </A>
         <A>BLOG</A>
         <A>CONTACT</A>
-      </ContainA>
+      </ContainMenu>
+
       <ContainIcon>
         <Icon src={siamSmileIcon} alt="" />
       </ContainIcon>
 
-      <ContainA>
+      <ContainLogin>
         <A>
           <Icon src={callIcon} alt="callIcon" /> CALL US: 02-12345678
         </A>
         <A>LOGIN</A>
         <CotainSearchAndCart>
-          <A>
-            <Icon src={seachIcon} alt="seachIcon" />
-          </A>
+          <Icon src={seachIcon} alt="seachIcon" />
           <Icon src={lineBorderIcon}></Icon>
-          <A>
-            <Icon src={cartIcon} alt="seachIcon" />
-          </A>
+          <Icon src={cartIcon} alt="seachIcon" />
         </CotainSearchAndCart>
-      </ContainA>
+      </ContainLogin>
     </Navbar>
   );
 }
@@ -62,12 +59,34 @@ const Navbar = styled.div`
   justify-content: space-between;
   position: relative;
   padding: 24px 100px;
+  @media (max-width: 1024px) {
+    padding: 24px 10px;
+  }
 `;
 
 const ContainA = styled.div`
   display: flex;
   gap: 32px;
-  justify-self: flex-end;
+`;
+
+const ContainMenu = styled(ContainA)`
+  @media (max-width: 1024px) {
+    & A {
+      &:not(:nth-child(1)) {
+        display: none;
+      }
+    }
+  }
+`;
+
+const ContainLogin = styled(ContainA)`
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    & A {
+      display: none;
+    }
+  }
 `;
 
 const SupNumber = styled.sup`
@@ -75,9 +94,11 @@ const SupNumber = styled.sup`
 `;
 
 const ContainIcon = styled.div`
-  margin: 0 270px 0 135pxx;
   position: absolute;
   left: 40%;
+  @media (max-width: 1024px) {
+    position: unset;
+  }
 `;
 
 const CotainSearchAndCart = styled.div`
