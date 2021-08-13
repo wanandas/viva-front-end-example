@@ -4,7 +4,17 @@ import mockSmallItem from "../Icon/mockSmallItem.svg";
 import bg from "../Icon/bg.svg";
 
 export const mockData = {
-  heroBg: [bg, bg, bg],
+  heroBg: [
+    {
+      id: 1,
+      picture: bg,
+      discount: 30,
+      name: "Sofa",
+      type: "Stand Table Lighting",
+    },
+    { id: 1, picture: bg, discount: 30, name: "", type: "" },
+    { id: 1, picture: bg, discount: 30, name: "", type: "" },
+  ],
   itemSmall: [mockSmallItem, mockSmallItem, mockSmallItem],
   showCaseITem: [
     {

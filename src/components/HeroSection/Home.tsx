@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { NavSiamSmile } from "./NavSiamSmile";
 
-import arrowLeftIcon from "../Icon/ArrowLeft.svg";
-import arrowRightIcon from "../Icon/ArrowRight.svg";
-
-import { mockData } from "../utils/mockData";
+import arrowLeftIcon from "../../Icon/ArrowLeft.svg";
+import arrowRightIcon from "../../Icon/ArrowRight.svg";
+import { mockData } from "../../utils/mockData";
+import { A } from "../../utils/Tag";
 
 export default function Home() {
   const [indexHero, setIndexHero] = useState(0);
@@ -28,8 +28,21 @@ export default function Home() {
           <img src={arrowLeftIcon} alt="" />
         </ArrowContain>
         <ItemHeroContain>
-          <ItemHero src={mockData.heroBg[indexHero]} alt="" />
+          <ItemHero src={mockData.heroBg[indexHero].picture} alt="" />
+          <ItemHeroContent>
+            <p style={{ margin: 0 }}>
+              UP TO {mockData.heroBg[indexHero].discount}% OFF
+            </p>
+            <h2 style={{ letterSpacing: ".25em", margin: 0 }}>
+              {mockData.heroBg[indexHero].name},{" "}
+              {mockData.heroBg[indexHero].type}
+            </h2>
+            <div style={{ marginTop: "20px" }}>
+              <ItemHeroContentButton>{`{ Shop Now }`}</ItemHeroContentButton>
+            </div>
+          </ItemHeroContent>
         </ItemHeroContain>
+
         <ArrowContain
           onClick={() => {
             if (indexHero !== mockData.heroBg.length - 1) {
@@ -90,12 +103,35 @@ const ArrowContain = styled.div`
 `;
 
 const ItemHeroContain = styled.div`
+  position: relative;
   overflow: hidden;
 `;
 
 const ItemHero = styled.img`
   max-width: 100%;
   height: auto;
+`;
+
+const ItemHeroContent = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(50%, -50%);
+  top: 50%;
+  right: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  gap: 20px;
+`;
+
+const ItemHeroContentButton = styled(A)`
+  padding: 16.5px 39px;
+  width: 100%;
+  border: 2px solid #ffffff;
+  color: #ffffff;
 `;
 
 const ItemSmallContain = styled.div`

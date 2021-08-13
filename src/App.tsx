@@ -1,6 +1,6 @@
 import React from "react";
-import { FreeShipping } from "./components/FreeShipping";
-import Home from "./components/Home";
+import { FreeShipping } from "./components/HeroSection/FreeShipping";
+import Home from "./components/HeroSection/Home";
 
 function App() {
   return (

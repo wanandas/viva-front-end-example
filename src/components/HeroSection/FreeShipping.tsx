@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import freeShippingIcon from "../Icon/FreeShipping.svg";
-import { COLOR } from "../utils/COLOR";
-import { A } from "../utils/Tag";
+import freeShippingIcon from "../../Icon/FreeShipping.svg";
+import { COLOR } from "../../utils/COLOR";
+import { A } from "../../utils/Tag";
 
 export function FreeShipping() {
   return (
