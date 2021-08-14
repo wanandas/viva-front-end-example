@@ -3,12 +3,13 @@
 import mockSmallItem from "../Icon/mockSmallItem.svg";
 import bg from "../Icon/bg.svg";
 import categoriesPic from "../Icon/categories.svg";
+import showcase from "../Icon/Showcase.svg";
 
 export const categories = [
-  { cover: categoriesPic, name: "Chair" },
-  { cover: categoriesPic, name: "Child Toys" },
-  { cover: categoriesPic, name: "Wooden Light" },
-  { cover: categoriesPic, name: "Kitchen Accessories" },
+  { cover: categoriesPic, name: "Chair", itemCount: 530 },
+  { cover: categoriesPic, name: "Child Toys", itemCount: 65 },
+  { cover: categoriesPic, name: "Wooden Light", itemCount: 56 },
+  { cover: categoriesPic, name: "Kitchen Accessories", itemCount: 20 },
 ];
 
 export const mockData = {
@@ -20,17 +21,30 @@ export const mockData = {
       name: "Sofa",
       type: "Stand Table Lighting",
     },
-    { id: 1, picture: bg, discount: 30, name: "", type: "" },
-    { id: 1, picture: bg, discount: 30, name: "", type: "" },
+    {
+      id: 1,
+      picture: bg,
+      discount: 30,
+      name: "Sofa",
+      type: "Stand Table Lighting",
+    },
+    {
+      id: 1,
+      picture: bg,
+      discount: 30,
+      name: "Sofa",
+      type: "Stand Table Lighting",
+    },
   ],
   itemSmall: [mockSmallItem, mockSmallItem, mockSmallItem],
-  showCaseITem: [
+  showCaseItem: [
     {
       id: 1,
       discount: 30,
       name: "Sofa",
       type: "Stand Table",
       price: 150,
+      picture: showcase,
     },
     {
       id: 2,
@@ -38,6 +52,7 @@ export const mockData = {
       name: "kook",
       type: "Kitchen Set",
       price: 200,
+      picture: showcase,
     },
   ],
   item: [

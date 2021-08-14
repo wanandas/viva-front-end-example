@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { categories } from "../../utils/mockData";
-import { Box, P } from "../../utils/Tag";
+import { A, Box, P } from "../../utils/Tag";
 import { ArrowContain } from "../HeroSection/Home";
 
 import arrowLeftIcon from "../../Icon/ArrowLeft.svg";
@@ -42,14 +42,16 @@ export default function Shopby() {
           <img src={arrowRightIcon} alt="" />
         </CategoriesArrowContain>
       </ItemContain>
-      <P>{`{ all categories }`}</P>
+      <div>
+        <AllButton>{`{ all categories }`}</AllButton>
+      </div>
     </ShopbyContain>
   );
 }
 
 const ShopbyContain = styled(Box)`
   text-align: center;
-  padding: 10% 0;
+  padding: 10% 0 0;
   background-color: #fff;
 `;
 
@@ -104,4 +106,12 @@ const Image = styled.img`
   bottom: 0;
   right: 0;
   left: 0;
+`;
+
+const AllButton = styled(A)`
+  padding: 16.5px 39px;
+  width: 100%;
+  border: 2px solid #f5f5f5;
+  color: #6a6a6a;
+  text-transform: uppercase;
 `;
