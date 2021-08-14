@@ -33,7 +33,6 @@ export default function Showcase() {
                 </button>
               </div>
             </CardItem>
-            <CardBehide />
           </ItemShowcaseContain>
         );
       })}
@@ -89,5 +88,3 @@ const CardItem = styled(Box)`
     border: 1px solid #ffffff;
   }
 `;
-
-const CardBehide = styled(Box)``;
