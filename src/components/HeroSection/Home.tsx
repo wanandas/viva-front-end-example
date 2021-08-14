@@ -86,7 +86,7 @@ const HeroContain = styled.div`
   gap: 24px;
 `;
 
-const ArrowContain = styled.div`
+export const ArrowContain = styled.div`
   border-radius: 24px;
   border: 1px solid #f5f5f5;
   padding: 20px 20px;

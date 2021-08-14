@@ -2,6 +2,14 @@
 
 import mockSmallItem from "../Icon/mockSmallItem.svg";
 import bg from "../Icon/bg.svg";
+import categoriesPic from "../Icon/categories.svg";
+
+export const categories = [
+  { cover: categoriesPic, name: "Chair" },
+  { cover: categoriesPic, name: "Child Toys" },
+  { cover: categoriesPic, name: "Wooden Light" },
+  { cover: categoriesPic, name: "Kitchen Accessories" },
+];
 
 export const mockData = {
   heroBg: [
