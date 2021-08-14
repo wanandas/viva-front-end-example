@@ -12,7 +12,7 @@ export default function BestOffers() {
           style={{
             margin: 0,
             textTransform: "uppercase",
-            letterSpacing: ".20ch",
+            letterSpacing: "0.025em",
           }}
         >
           Best Daily Deal <span style={{ fontWeight: 500 }}>Offers</span>

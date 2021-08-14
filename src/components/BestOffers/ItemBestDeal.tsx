@@ -3,6 +3,9 @@ import styled from "styled-components";
 import { mockData } from "../../utils/mockData";
 import { A, Box, P } from "../../utils/Tag";
 
+import starSolidIcon from "../../Icon/star-solid.svg";
+import starRegularIcon from "../../Icon/star-regular.svg";
+
 type Prop = {
   active?: boolean;
 };
@@ -47,14 +50,38 @@ export default function ItemBestDeal() {
               <ItemCover>
                 <ContainImage>
                   <Image src={item.picture[0]} alt="" />
-                  <DiscountTag>{item.discount}</DiscountTag>
+                  {item.discount > 0 ? (
+                    <DiscountTag>{item.discount}% OFF</DiscountTag>
+                  ) : (
+                    <></>
+                  )}
                 </ContainImage>
               </ItemCover>
               <ItemContent>
-                <P>{item.name}</P>
-                <P></P>
-                <P>{item.price}</P>
-                <P>{categories[indexCategories]}</P>
+                <P style={{ fontWeight: 600 }}>{item.name}</P>
+                {(() => {
+                  const rows = [];
+                  for (let i = 0; i < 5; i++) {
+                    if (i >= item.rate) {
+                      rows.push(
+                        <img key={i} src={starRegularIcon} width="16px" />
+                      );
+                    } else {
+                      rows.push(
+                        <img key={i} src={starSolidIcon} width="16px" />
+                      );
+                    }
+                  }
+                  return (
+                    <RateContain>
+                      {rows} ({item.comment})
+                    </RateContain>
+                  );
+                })()}
+                <P style={{ color: "#C9A75C" }}>${item.price.toFixed(2)} </P>
+                <P style={{ color: "#B0B0B0", fontSize: "12px" }}>
+                  {categories[indexCategories]}
+                </P>
               </ItemContent>
             </Item>
           );
@@ -88,6 +115,11 @@ const ItemContent = styled(Box)`
   gap: 11px;
 `;
 
+const RateContain = styled(Box)`
+  flex-direction: row;
+  gap: 6px;
+`;
+
 const Item = styled(Box)``;
 
 const ItemCover = styled.div`
@@ -116,8 +148,9 @@ const Image = styled.img`
 
 const DiscountTag = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
+  top: 10px;
+  left: 10px;
   background-color: #5cc9a3;
+  color: #ffffff;
+  padding: 4px 8px;
 `;

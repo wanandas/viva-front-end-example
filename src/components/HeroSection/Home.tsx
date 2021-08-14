@@ -33,7 +33,7 @@ export default function Home() {
             <p style={{ margin: 0 }}>
               UP TO {mockData.heroBg[indexHero].discount}% OFF
             </p>
-            <h2 style={{ letterSpacing: ".25em", margin: 0 }}>
+            <h2 style={{ letterSpacing: "0.025em", margin: 0 }}>
               {mockData.heroBg[indexHero].name},{" "}
               {mockData.heroBg[indexHero].type}
             </h2>
