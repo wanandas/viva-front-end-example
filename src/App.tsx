@@ -1,4 +1,5 @@
 import React from "react";
+import BestOffers from "./components/BestOffers/BestOffers";
 import { FreeShipping } from "./components/HeroSection/FreeShipping";
 import Home from "./components/HeroSection/Home";
 import Shopby from "./components/ShopbySection/Shopby";
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <Shopby />
       <Showcase />
+      <BestOffers />
     </div>
   );
 }

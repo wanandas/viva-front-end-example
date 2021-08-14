@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270" height="314" viewBox="0 0 270 314">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 270 314">
+      <image width="270" height="314" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAE6BAMAAAAVdKEtAAAAG1BMVEXMzMyWlpa3t7eqqqqcnJyjo6OxsbHFxcW+vr5ozvk/AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC+0lEQVR4nO3XvW/TQBjH8cOJa48c8dvYAH9ALXVgjAVIjPVEx1iCzglqBWNCUeHP5p57sY2EmM4D0vczJLZ70v16L48vSgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/uFV936v1Fo7J6Wy6+LNvEF2rd+e3GWuw8P+eeQYD6bz4jTPsTVf+1kLuS8P9vIi5Eh05BxZJ73Xsxy5fL2YWth7fWOv1yHHfewcK139fNKlSl6KbSF93WatPowt1vrD10cfrA052tg5jjIT9kMMjZmGUtLtxxbnQv5gHqpvr7XPYcYocg7p1Uy76zbTV0p1jVzsphYyFM8kjEyhe7bedJFztNJL7qc/LQ4+Qt9kdiraUrW18gtjyjHUsXP0jXz6f1/+9UTGRA2VGgoZl1p9lox2PO7uPrkcub6MnqO2Odx4dDcyR5fm6rwxW2Kv0rBOho398vslLVXsHN+l18zlsBFWds0eS3O3M2vU7pvsUdfzHGY5x85h+e2xlsFP7ZaVeegq1dvtmthKN+XITPNFcmxdubA7w+fQ8vSLWzfJWE9djlRCLpAj0W72u93YlXym+trVFZNDN7Mc22aRHKZ6yhYxu2D/Rw5TrErf5EkXU46su1okxw8/HG5GpnkxxbsObc52F7kcK2kRP8dKuz7UsZjS2HpxdOMkLtylzXGu1AI5sl5/dFfbysU6KbtvZaHuQitfcW2O7XREiOh+fMe70jrWManjJln+bi+PXaQFc/R+S4Z321jXTaJOH3yNy5Yej8SX9BBgfM/J8niQR/Y+n60PK/b6WBfhxJP65drb977ppt3ksmHsdKWz/bJIjvN4Alz7M1g4B8m7ti/9CcVX3OVytM0vcZBpCHncuTA1UyEHtaO+NefCSi2bo3drbmdGxhfPcE4+mywrs3qSv52To+foxhxD5R/53w3mdavsoWww967iLphDjznasFLc76jEFnU5lOXT76jlcgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/qd+IkGpxcdhyswAAAABJRU5ErkJggg=="/>
+    </pattern>
+    <filter id="Add_your_image_here" x="0" y="0" width="270" height="314" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#f5f5f5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Add_your_image_here)">
+    <rect id="Add_your_image_here-2" data-name="Add your image here" width="270" height="314" fill="url(#pattern)"/>
+  </g>
+</svg>

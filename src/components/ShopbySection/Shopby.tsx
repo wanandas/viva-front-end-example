@@ -55,7 +55,7 @@ const ShopbyContain = styled(Box)`
   background-color: #fff;
 `;
 
-const TitleContain = styled(Box)`
+export const TitleContain = styled(Box)`
   gap: 15.4px;
 `;
 
