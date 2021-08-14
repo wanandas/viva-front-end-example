@@ -15,3 +15,8 @@ export const Box = styled.div`
 export const P = styled.p`
   margin: 0;
 `;
+
+export const H4 = styled.h4`
+  margin: 0;
+  letter-spacing: 0.025em;
+`;

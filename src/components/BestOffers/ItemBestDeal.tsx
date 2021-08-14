@@ -108,6 +108,12 @@ const ItemBestContain = styled(Box)`
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   gap: 30px;
+  @media (max-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `;
 
 const ItemContent = styled(Box)`
