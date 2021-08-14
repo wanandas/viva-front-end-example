@@ -100,7 +100,7 @@ const ControlFilterContain = styled(Box)`
   justify-content: center;
   gap: 24px;
   font-size: 14px;
-  margin: 34px 0 27px;
+  margin: 0 0 27px;
 `;
 
 const ItemBestContain = styled(Box)`

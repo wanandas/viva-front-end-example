@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Box, P } from "../../utils/Tag";
-import { TitleContain } from "../ShopbySection/Shopby";
+import { AllButton, TitleContain } from "../ShopbySection/Shopby";
 import ItemBestDeal from "./ItemBestDeal";
 
 export default function BestOffers() {
@@ -23,7 +23,11 @@ export default function BestOffers() {
         </P>
       </TitleContain>
       <ItemBestDeal />
-      <Box></Box>
+      <Box>
+        <div>
+          <AllButton>{`{ all categories }`}</AllButton>
+        </div>
+      </Box>
     </BestOffersContain>
   );
 }
@@ -32,4 +36,5 @@ const BestOffersContain = styled(Box)`
   text-align: center;
   padding: 92px 0 0;
   background-color: #fff;
+  gap: 34px;
 `;

@@ -108,7 +108,7 @@ const Image = styled.img`
   left: 0;
 `;
 
-const AllButton = styled(A)`
+export const AllButton = styled(A)`
   padding: 16.5px 39px;
   width: 100%;
   border: 2px solid #f5f5f5;
