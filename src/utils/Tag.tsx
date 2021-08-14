@@ -20,3 +20,12 @@ export const H4 = styled.h4`
   margin: 0;
   letter-spacing: 0.025em;
 `;
+
+export const Image = styled.img`
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+`;

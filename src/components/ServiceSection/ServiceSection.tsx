@@ -55,7 +55,7 @@ const ContainCard = styled(Box)`
   margin: 0 auto;
   gap: 30px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
     gap: 10px;
   }
   @media (max-width: 768px) {
@@ -72,7 +72,10 @@ const Card = styled(Box)`
   align-items: center;
   gap: 8px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
     width: 300px;
+  }
+  @media (max-width: 1024px) {
+    width: 250px;
   }
 `;

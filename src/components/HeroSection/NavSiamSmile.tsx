@@ -70,7 +70,7 @@ const ContainA = styled.div`
 `;
 
 const ContainMenu = styled(ContainA)`
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
     & A {
       &:not(:nth-child(1)) {
         display: none;
@@ -80,7 +80,7 @@ const ContainMenu = styled(ContainA)`
 `;
 
 const ContainLogin = styled(ContainA)`
-  @media (max-width: 1024px) {
+  @media (max-width: 1366px) {
     flex-direction: column-reverse;
     align-items: flex-end;
     & A {

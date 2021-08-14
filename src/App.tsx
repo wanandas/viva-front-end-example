@@ -2,6 +2,7 @@ import React from "react";
 import BestOffers from "./components/BestOffers/BestOffers";
 import { FreeShipping } from "./components/HeroSection/FreeShipping";
 import Home from "./components/HeroSection/Home";
+import News from "./components/News/News";
 import Offer from "./components/OfferSection/Offer";
 import ServiceSection from "./components/ServiceSection/ServiceSection";
 import Shopby from "./components/ShopbySection/Shopby";
@@ -17,6 +18,7 @@ function App() {
       <BestOffers />
       <ServiceSection />
       <Offer />
+      <News />
     </div>
   );
 }

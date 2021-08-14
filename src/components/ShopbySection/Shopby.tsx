@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { categories } from "../../utils/mockData";
-import { A, Box, P } from "../../utils/Tag";
+import { A, Box, P, Image } from "../../utils/Tag";
 import { ArrowContain } from "../HeroSection/Home";
 
 import arrowLeftIcon from "../../Icon/ArrowLeft.svg";
@@ -97,15 +97,6 @@ const ContainImage = styled.div`
   overflow: hidden;
   padding: 100% 0 0 0; /* 34.37% = 100 / (w / h) = 100 / (640 / 220) */
   margin-bottom: 10px;
-`;
-
-const Image = styled.img`
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 `;
 
 export const AllButton = styled(A)`

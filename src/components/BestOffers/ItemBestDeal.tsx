@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { mockData } from "../../utils/mockData";
-import { A, Box, P } from "../../utils/Tag";
+import { A, Box, P, Image } from "../../utils/Tag";
 
 import starSolidIcon from "../../Icon/star-solid.svg";
 import starRegularIcon from "../../Icon/star-regular.svg";
@@ -49,7 +49,7 @@ export default function ItemBestDeal() {
             <Item key={i}>
               <ItemCover>
                 <ContainImage>
-                  <Image src={item.picture[0]} alt="" />
+                  <Image src={item.picture[0]} alt="cover image" />
                   {item.discount > 0 ? (
                     <DiscountTag>{item.discount}% OFF</DiscountTag>
                   ) : (
@@ -64,11 +64,21 @@ export default function ItemBestDeal() {
                   for (let i = 0; i < 5; i++) {
                     if (i >= item.rate) {
                       rows.push(
-                        <img key={i} src={starRegularIcon} width="16px" />
+                        <img
+                          key={i}
+                          src={starRegularIcon}
+                          width="16px"
+                          alt="star rate"
+                        />
                       );
                     } else {
                       rows.push(
-                        <img key={i} src={starSolidIcon} width="16px" />
+                        <img
+                          key={i}
+                          src={starSolidIcon}
+                          width="16px"
+                          alt="star rate"
+                        />
                       );
                     }
                   }
@@ -111,7 +121,7 @@ const ItemBestContain = styled(Box)`
   @media (max-width: 1280px) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
 `;
@@ -141,15 +151,6 @@ const ContainImage = styled.div`
   overflow: hidden;
   padding: 116% 0 0;
   margin-bottom: 10px;
-`;
-
-const Image = styled.img`
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
 `;
 
 const DiscountTag = styled.div`

@@ -7,6 +7,8 @@ import categoriesPic from "../Icon/categories.svg";
 import showcase from "../Icon/Showcase.svg";
 import item from "../Icon/item.svg";
 
+import newsCover from "../Icon/mockNewsCover.svg";
+
 export const categories = [
   { cover: categoriesPic, name: "Chair", itemCount: 530 },
   { cover: categoriesPic, name: "Child Toys", itemCount: 65 },
@@ -263,5 +265,33 @@ export const mockData = {
       dailyDeal: [1, 3],
     },
   ],
-  news: [],
+  news: [
+    {
+      id: 1,
+      cover: newsCover,
+      title: "Saepe Ducimus Veniam Vem",
+      content: "Quibusdam sapiente neque irure quas diam, ligula at saepe nunc",
+      date: "09 May 21",
+      commentCount: 40,
+      writer: "RT Shuvro",
+    },
+    {
+      id: 2,
+      cover: newsCover,
+      title: "Saepe Ducimus Veniam Vem",
+      content: "Quibusdam sapiente neque irure quas diam, ligula at saepe nunc",
+      date: "04 May 21",
+      commentCount: 11,
+      writer: "RT Shuvro",
+    },
+    {
+      id: 3,
+      cover: newsCover,
+      title: "Saepe Ducimus Veniam ",
+      content: "Quibusdam sapiente neque irure quas diam",
+      date: "05 May 21",
+      commentCount: 423,
+      writer: "RT Shuvro",
+    },
+  ],
 };

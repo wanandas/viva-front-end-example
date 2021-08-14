@@ -38,8 +38,8 @@ export default function Offer() {
               }}
             >
               <P style={{ fontSize: "20px" }}>Color: </P>
-              {["#7C7C7C", "#FD4E54", "#FF8181"].map((value) => (
-                <ColorCircle color={value} />
+              {["#7C7C7C", "#FD4E54", "#FF8181"].map((value, i) => (
+                <ColorCircle key={i} color={value} />
               ))}{" "}
             </Box>
             <Box style={{ flexDirection: "row" }}>

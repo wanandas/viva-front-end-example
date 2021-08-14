@@ -140,6 +140,10 @@ const ItemSmallContain = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
+
+  @media (max-width: 1366px) {
+    display: none;
+  }
 `;
 
 const ItemSmall = styled.div``;
