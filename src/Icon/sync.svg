@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.551" height="13.387" viewBox="0 0 16.551 13.387">
+  <g id="Group_11" data-name="Group 11" transform="translate(-12.058 -13.305)">
+    <g id="Icon_feather-refresh-ccw" data-name="Icon feather-refresh-ccw" transform="translate(13 14)">
+      <g id="Group_12" data-name="Group 12">
+        <path id="Path_110" data-name="Path 110" d="M.667,2.667v4h4" transform="translate(-0.667 -2.001)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333"/>
+      </g>
+      <g id="Group_13" data-name="Group 13">
+        <path id="Path_111" data-name="Path 111" d="M15.333,13.333v-4h-4" transform="translate(-0.667 -2.001)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333"/>
+      </g>
+      <path id="Path_112" data-name="Path 112" d="M13.66,6a6,6,0,0,0-9.9-2.24L.667,6.667M15.333,9.333,12.24,12.24A6,6,0,0,1,2.34,10" transform="translate(-0.667 -2.001)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333"/>
+    </g>
+  </g>
+</svg>

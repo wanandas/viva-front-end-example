@@ -61,7 +61,7 @@ export const mockData = {
   ],
   item: [
     {
-      id: 1,
+      id: "of1",
       rate: 4,
       comment: 32,
       price: 32,
@@ -72,7 +72,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 2,
+      id: "of2",
       rate: 4,
       comment: 32,
       price: 32,
@@ -84,7 +84,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 3,
+      id: "of3",
       rate: 4,
       comment: 32,
       price: 32,
@@ -95,7 +95,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 4,
+      id: "of4",
       rate: 4,
       comment: 32,
       price: 32,
@@ -106,7 +106,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 5,
+      id: "of5",
       rate: 4,
       comment: 32,
       price: 32,
@@ -117,7 +117,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 6,
+      id: "of6",
       rate: 4,
       comment: 32,
       price: 32,
@@ -129,7 +129,7 @@ export const mockData = {
     },
 
     {
-      id: 7,
+      id: "of7",
       rate: 4,
       comment: 32,
       price: 32,
@@ -141,7 +141,7 @@ export const mockData = {
     },
 
     {
-      id: 8,
+      id: "of8",
       rate: 4,
       comment: 32,
       price: 32,
@@ -152,7 +152,7 @@ export const mockData = {
       dailyDeal: [1],
     },
     {
-      id: 9,
+      id: "of9",
       rate: 4,
       comment: 32,
       price: 32,
@@ -164,7 +164,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 10,
+      id: "of10",
       rate: 4,
       comment: 32,
       price: 32,
@@ -176,7 +176,7 @@ export const mockData = {
       dailyDeal: [1, 2],
     },
     {
-      id: 11,
+      id: "of11",
       rate: 4,
       comment: 32,
       price: 32,
@@ -187,7 +187,7 @@ export const mockData = {
       dailyDeal: [1, 2],
     },
     {
-      id: 12,
+      id: "of12",
       rate: 4,
       comment: 32,
       price: 32,
@@ -198,7 +198,7 @@ export const mockData = {
       dailyDeal: [2],
     },
     {
-      id: 13,
+      id: "of13",
       rate: 4,
       comment: 32,
       price: 32,
@@ -209,7 +209,7 @@ export const mockData = {
       dailyDeal: [3],
     },
     {
-      id: 14,
+      id: "of14",
       rate: 4,
       comment: 32,
       price: 32,
@@ -220,7 +220,7 @@ export const mockData = {
       dailyDeal: [1, 2],
     },
     {
-      id: 15,
+      id: "of15",
       rate: 4,
       comment: 32,
       price: 32,
@@ -231,7 +231,7 @@ export const mockData = {
       dailyDeal: [1, 2],
     },
     {
-      id: 16,
+      id: "of16",
       rate: 4,
       comment: 32,
       price: 32,
@@ -242,7 +242,7 @@ export const mockData = {
       dailyDeal: [1],
     },
     {
-      id: 17,
+      id: "of17",
       rate: 4,
       comment: 32,
       price: 32,
@@ -254,7 +254,7 @@ export const mockData = {
       dailyDeal: [1, 2],
     },
     {
-      id: 18,
+      id: "of18",
       rate: 4,
       comment: 32,
       price: 32,

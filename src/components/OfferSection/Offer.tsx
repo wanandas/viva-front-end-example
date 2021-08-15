@@ -3,8 +3,16 @@ import styled from "styled-components";
 import { A, Box, P } from "../../utils/Tag";
 
 import mockCover from "../../Icon/mockItemOffer.svg";
+import { IUser } from "../../App";
+import _ from "lodash";
 
-export default function Offer() {
+export default function Offer({
+  state,
+  setCart,
+}: {
+  state: IUser;
+  setCart: React.Dispatch<React.SetStateAction<IUser>>;
+}) {
   return (
     <OfferContain>
       <Card>
@@ -54,7 +62,34 @@ export default function Offer() {
                 </Button>
               </div>
               <div>
-                <Button>Add to Cart</Button>
+                <Button
+                  onClick={() => {
+                    const index = _.findIndex(state.cart, {
+                      idItem: "of1",
+                    });
+                    if (state.cart.some((val) => val.idItem === "of1")) {
+                      let newArray = [...state.cart];
+                      newArray[index] = {
+                        ...newArray[index],
+                        countItem: newArray[index].countItem + 1,
+                      };
+                      return setCart((state) => ({
+                        ...state,
+                        cart: newArray,
+                      }));
+                    } else {
+                      return setCart((state) => ({
+                        ...state,
+                        cart: state.cart.concat({
+                          idItem: "of1",
+                          countItem: 1,
+                        }),
+                      }));
+                    }
+                  }}
+                >
+                  Add to Cart
+                </Button>
               </div>
             </Box>
             <Box>

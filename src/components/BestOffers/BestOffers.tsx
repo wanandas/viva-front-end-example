@@ -1,10 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import { IUser } from "../../App";
 import { Box, P } from "../../utils/Tag";
 import { AllButton, TitleContain } from "../ShopbySection/Shopby";
 import ItemBestDeal from "./ItemBestDeal";
 
-export default function BestOffers() {
+export default function BestOffers({
+  state,
+  setCart,
+}: {
+  state: IUser;
+  setCart: React.Dispatch<React.SetStateAction<IUser>>;
+}) {
   return (
     <BestOffersContain>
       <TitleContain>
@@ -22,7 +29,7 @@ export default function BestOffers() {
           voluptate sequuy
         </P>
       </TitleContain>
-      <ItemBestDeal />
+      <ItemBestDeal state={state} setCart={setCart} />
       <Box>
         <div>
           <AllButton>{`{ all categories }`}</AllButton>
