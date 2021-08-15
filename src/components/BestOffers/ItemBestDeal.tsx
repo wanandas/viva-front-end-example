@@ -124,6 +124,9 @@ const ItemBestContain = styled(Box)`
   @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
   }
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const ItemContent = styled(Box)`
@@ -136,7 +139,13 @@ const RateContain = styled(Box)`
   gap: 6px;
 `;
 
-const Item = styled(Box)``;
+const Item = styled(Box)`
+  @media (max-width: 500px) {
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+`;
 
 const ItemCover = styled.div`
   position: relative;

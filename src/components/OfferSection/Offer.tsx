@@ -86,6 +86,9 @@ const Card = styled(Box)`
 `;
 const Cover = styled(Box)`
   width: 550px;
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 `;
 
 const ContentContain = styled(Box)`
@@ -103,6 +106,9 @@ const Button = styled(A)`
   color: #6a6a6a;
   font-size: 20px;
   text-transform: uppercase;
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 `;
 
 const ColorCircle = styled.div`

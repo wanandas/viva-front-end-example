@@ -11,7 +11,7 @@ export default function Home() {
   const [indexHero, setIndexHero] = useState(0);
 
   return (
-    <HomeContain>
+    <HomeContain id="home">
       <NavSiamSmile />
       <HeroContain>
         <ArrowContain
@@ -125,6 +125,9 @@ const ItemHeroContent = styled.div`
   text-transform: uppercase;
   color: #ffffff;
   gap: 20px;
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const ItemHeroContentButton = styled(A)`

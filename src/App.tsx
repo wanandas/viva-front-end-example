@@ -1,5 +1,6 @@
 import React from "react";
 import BestOffers from "./components/BestOffers/BestOffers";
+import Footer from "./components/Footer/Footer";
 import { FreeShipping } from "./components/HeroSection/FreeShipping";
 import Home from "./components/HeroSection/Home";
 import News from "./components/News/News";
@@ -19,6 +20,7 @@ function App() {
       <ServiceSection />
       <Offer />
       <News />
+      <Footer />
     </div>
   );
 }

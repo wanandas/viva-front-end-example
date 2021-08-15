@@ -59,8 +59,12 @@ const Navbar = styled.div`
   justify-content: space-between;
   position: relative;
   padding: 24px 100px;
+  overflow: hidden;
   @media (max-width: 1024px) {
     padding: 24px 10px;
+  }
+  @media (max-width: 500px) {
+    padding: 24px 0;
   }
 `;
 
@@ -70,12 +74,16 @@ const ContainA = styled.div`
 `;
 
 const ContainMenu = styled(ContainA)`
-  @media (max-width: 1366px) {
+  @media (max-width: 1440px) {
     & A {
       &:not(:nth-child(1)) {
         display: none;
       }
     }
+  }
+  @media (max-width: 500px) {
+    order: 1;
+    transform: translateX(-30px);
   }
 `;
 
@@ -86,6 +94,9 @@ const ContainLogin = styled(ContainA)`
     & A {
       display: none;
     }
+  }
+  @media (max-width: 500px) {
+    display: none;
   }
 `;
 
@@ -98,6 +109,9 @@ const ContainIcon = styled.div`
   left: 40%;
   @media (max-width: 1024px) {
     position: unset;
+  }
+  @media (max-width: 500px) {
+    transform: translateX(-20px);
   }
 `;
 

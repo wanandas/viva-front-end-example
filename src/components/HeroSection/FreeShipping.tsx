@@ -43,4 +43,12 @@ const FreeShippingNav = styled.div`
   @media (max-width: 1024px) {
     gap: 16px;
   }
+
+  @media (max-width: 500px) {
+    & A {
+      &:not(:nth-child(4)) {
+        display: none;
+      }
+    }
+  }
 `;
